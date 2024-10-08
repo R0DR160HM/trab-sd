@@ -1,20 +1,21 @@
-# mercury_server
+# consultar_estoque
 
-[![Package Version](https://img.shields.io/hexpm/v/mercury_server)](https://hex.pm/packages/mercury_server)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/mercury_server/)
+[![Package Version](https://img.shields.io/hexpm/v/consultar_estoque)](https://hex.pm/packages/consultar_estoque)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/consultar_estoque/)
 
 ```sh
-gleam add mercury_server@1
+gleam add consultar_estoque@1
 ```
+
 ```gleam
-import mercury_server
+import consultar_estoque
 
 pub fn main() {
   // TODO: An example of the project in use
 }
 ```
 
-Further documentation can be found at <https://hexdocs.pm/mercury_server>.
+Further documentation can be found at <https://hexdocs.pm/consultar_estoque>.
 
 ## Development
 

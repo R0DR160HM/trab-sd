@@ -1,4 +1,4 @@
-name = "mercury_server"
+name = "consultar_estoque"
 version = "1.0.0"
 
 # Fill out these fields if you intend to generate HTML documentation or publish
@@ -17,6 +17,7 @@ gleam_stdlib = ">= 0.34.0 and < 2.0.0"
 gleam_erlang = ">= 0.27.0 and < 1.0.0"
 gleam_http = ">= 3.7.0 and < 4.0.0"
 mist = ">= 2.0.0 and < 3.0.0"
+gleam_json = ">= 2.0.0 and < 3.0.0"
 
 [dev-dependencies]
 gleeunit = ">= 1.0.0 and < 2.0.0"
