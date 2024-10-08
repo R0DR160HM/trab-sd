@@ -16,6 +16,6 @@ pub fn not_found() -> Response(ResponseData) {
 pub fn method_not_allowed() -> Response(ResponseData) {
   response.new(405)
   |> response.set_body(
-    mist.Bytes(bytes_builder.from_string("Method not allowed!")),
+    mist.Bytes(bytes_builder.from_string("Method not allowed")),
   )
 }
