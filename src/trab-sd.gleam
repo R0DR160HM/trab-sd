@@ -1,12 +1,12 @@
-import consultar_estoque/calculadora
-import consultar_estoque/generic_response
-import consultar_estoque/stock
 import gleam/erlang/process
 import gleam/http
 import gleam/http/request.{type Request}
 import gleam/http/response.{type Response}
 import gleam/io
 import mist
+import trab_sd/calculadora
+import trab_sd/generic_response
+import trab_sd/stock
 
 pub fn main() {
   io.println("Starting server...")
@@ -14,6 +14,7 @@ pub fn main() {
   let assert Ok(_) =
     router
     |> mist.new
+    |> mist.bind("0.0.0.0")
     |> mist.port(8080)
     |> mist.start_http
 

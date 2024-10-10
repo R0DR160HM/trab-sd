@@ -21,8 +21,17 @@ pub fn multiplicacao(i: String, j: String) {
 }
 
 pub fn divisao(i: String, j: String) {
-  use f1, f2 <- parse(i, j)
-  f1 /. f2
+  case utils.string_to_float(j) {
+    Ok(0.0) ->
+      response.new(500)
+      |> response.set_body(
+        mist.Bytes(bytes_builder.from_string("Unable to divide by 0")),
+      )
+    _ -> {
+      use f1, f2 <- parse(i, j)
+      f1 /. f2
+    }
+  }
 }
 
 fn parse(value1: String, value2: String, callback: fn(Float, Float) -> Float) {
