@@ -5,10 +5,6 @@ import gleam/http/response
 import gleam/json
 import mist
 
-pub type MathError {
-  UnableToDivideByZero
-}
-
 pub fn soma(i: String, j: String) {
   use f1, f2 <- parse(i, j)
   f1 +. f2
