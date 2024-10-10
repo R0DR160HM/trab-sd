@@ -1,9 +1,9 @@
-import consultar_estoque/generic_response
-import consultar_estoque/utils
 import gleam/bytes_builder
 import gleam/http/response
 import gleam/json
 import mist
+import trab_sd/generic_response
+import trab_sd/utils
 
 pub fn soma(i: String, j: String) {
   use f1, f2 <- parse(i, j)

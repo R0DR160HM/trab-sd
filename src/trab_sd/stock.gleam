@@ -1,9 +1,9 @@
-import consultar_estoque/generic_response
 import gleam/bytes_builder
 import gleam/http/response
 import gleam/int
 import gleam/json
 import mist
+import trab_sd/generic_response
 
 pub fn discount() -> response.Response(mist.ResponseData) {
   int.random(2)
